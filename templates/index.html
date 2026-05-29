@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Trading Screenshot AI</title>
+
+<style>
+
+body{
+
+    background:#111;
+    color:white;
+    text-align:center;
+    font-family:Arial;
+    padding:20px;
+}
+
+.container{
+
+    margin-top:80px;
+}
+
+h1{
+
+    font-size:50px;
+    margin-bottom:40px;
+}
+
+input{
+
+    margin:25px;
+    font-size:24px;
+}
+
+button{
+
+    padding:18px 35px;
+    background:green;
+    border:none;
+    color:white;
+    font-size:28px;
+    border-radius:10px;
+}
+
+button:hover{
+
+    background:darkgreen;
+}
+
+p{
+
+    font-size:24px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Trading Screenshot AI</h1>
+
+<p>
+Upload your forex or crypto chart screenshot
+</p>
+
+<form
+action="/upload"
+method="POST"
+enctype="multipart/form-data"
+>
+
+<input
+type="file"
+name="image"
+required
+>
+
+<br>
+
+<button type="submit">
+Analyze Screenshot
+</button>
+
+</form>
+
+</div>
+
+</body>
+
+  </html>
