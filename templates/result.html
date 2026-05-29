@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>AI Result</title>
+
+<style>
+
+body{
+
+    background:#111;
+    color:white;
+    text-align:center;
+    font-family:Arial;
+    padding:20px;
+}
+
+h1{
+
+    font-size:48px;
+}
+
+h2{
+
+    font-size:40px;
+    margin-top:25px;
+}
+
+h3{
+
+    font-size:34px;
+}
+
+p{
+
+    font-size:28px;
+    margin:15px;
+}
+
+img{
+
+    margin-top:25px;
+    border-radius:15px;
+    width:90%;
+    max-width:500px;
+}
+
+.card{
+
+    margin-top:35px;
+    background:#222;
+    padding:25px;
+    border-radius:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Trading AI Analysis</h1>
+
+<img
+src="/{{ image }}"
+>
+
+<div class="card">
+
+<h2>
+Signal:
+{{ result.signal }}
+</h2>
+
+<h2>
+Confidence:
+{{ result.confidence }}%
+</h2>
+
+<h3>
+Trend:
+{{ result.trend }}
+</h3>
+
+<p>
+Brightness:
+{{ result.brightness }}
+</p>
+
+<p>
+Volatility:
+{{ result.volatility }}
+</p>
+
+<p>
+{{ result.analysis }}
+</p>
+
+</div>
+
+</body>
+
+  </html>
